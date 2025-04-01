@@ -1,0 +1,27 @@
+.preorder-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .preorder-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .preorder-message {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .preorder-message strong {
+    color: #e60000;
+  }
+  

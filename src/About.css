@@ -1,0 +1,51 @@
+.about-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1a1a1a;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .about-location {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 30px;
+    text-align: center;
+    color: #444;
+  }
+
+  .contact-button {
+    background-color: #d62828;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #a71d2a;
+  }
+  
+  
