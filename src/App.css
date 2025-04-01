@@ -1,39 +1,104 @@
-html {
-    scroll-behavior: smooth;
-  }
-  
+/* Welcome Section */
 .hero-section {
-    padding: 80px 20px;
-    text-align: center;
-    
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 20px;
+  color: #222;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Button Section */
+.section-buttons {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Button Styling */
+.btn {
+  padding: 12px 24px;
+  width: 220px;
+  background-color: #2f313c;
+  color: #d4b065;
+  text-decoration: none;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d4b065;
+  color: #2f313c;
+  transform: scale(1.05);
+}
+
+/* Optional: Animation on load */
+.section-buttons .btn {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.section-buttons .btn:nth-child(1) { animation-delay: 0s; }
+.section-buttons .btn:nth-child(2) { animation-delay: 0.1s; }
+.section-buttons .btn:nth-child(3) { animation-delay: 0.2s; }
+.section-buttons .btn:nth-child(4) { animation-delay: 0.3s; }
+.section-buttons .btn:nth-child(5) { animation-delay: 0.4s; }
+.section-buttons .btn:nth-child(6) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .hero-section h1 {
-    font-size: 3rem; /* Makes the welcome title large */
-    margin-bottom: 20px;
-  }
-  
-  .hero-section p {
-    font-size: 1.5rem; /* Larger subtitle */
-    
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-  
-/* ANNIMATION */
-  .hero-section {
-    animation: fadeIn 1.2s ease-in;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+}
+.section-buttons {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  width: 240px;
+  height: 50px;
+  background-color: #2f313c;
+  color: #d4b065;
+  text-decoration: none;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d4b065;
+  color: #2f313c;
+  transform: scale(1.05);
+}
