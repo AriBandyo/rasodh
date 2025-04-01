@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section">
           <h4><i className="fas fa-map-marker-alt"></i>Address</h4>
-          <p>317 Red Stone View North East</p>
-          <p>Calgary, T2N 0M9</p>
+          <p>Calgary</p>
+          <p>Alberta</p>
         </div>
 
         <div className="footer-section">
