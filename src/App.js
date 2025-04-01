@@ -8,7 +8,7 @@ import PreOrder from "./preorder";
 import AboutUs from "./About";
 import PopupModal from "./popup"; // new
 
-import "./app.css";
+import "./App.css";
 
 const HomePage = () => {
   const [showAbout, setShowAbout] = useState(false);
