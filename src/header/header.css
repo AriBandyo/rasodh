@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #2f313c;
+  background-color: #4d4d4d;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -27,7 +27,7 @@
 }
 
 .logo-container {
-  background-color: #2f313c;
+  background-color: #4d4d4d;
   padding: 5px;
   border-radius: 8px;
 }

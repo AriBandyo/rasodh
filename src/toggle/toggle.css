@@ -1,0 +1,57 @@
+.toggle-bar {
+    position: relative;
+    display: flex;
+    background-color: #f3f4f6;
+    padding: 8px;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .toggle-tab {
+    position: relative;
+    z-index: 2;
+    padding: 10px 22px;
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .toggle-tab.active {
+    color: white;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(50% - 8px);
+    height: calc(100% - 8px);
+    background-color: #3b82f6;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  
+  .toggle-slider.mains {
+    left: calc(50% + 4px);
+  }
+  
+  .badge {
+    background-color: white;
+    color: #3b82f6;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 999px;
+  }
+  

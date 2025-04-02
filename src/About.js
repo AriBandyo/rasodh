@@ -41,7 +41,9 @@ const About = () => {
         celebrating rich traditions, bold spices, and time-honored recipes that
         make every meal unforgettable.
         <br /><br />
-        <strong>What sets us apart?</strong> Our spices are sourced directly from India,
+        <strong>What sets us apart?</strong>
+        <br /><br />
+        Our spices are sourced directly from India,
         ensuring a depth of flavor that captures the true essence of Indian
         cuisine. Combined with fresh, premium ingredients and meticulous
         preparation, our dishes deliver an experience that's both nostalgic and
@@ -49,7 +51,7 @@ const About = () => {
         <br /><br />
         Whether you’re craving the comfort of familiar dishes or exploring new
         tastes, Rasodh is your go-to destination for authentic Indian food made
-        with love ❤️.
+        with love.
       </p>
     </section>
   );

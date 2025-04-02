@@ -1,16 +1,20 @@
-// components/PopupModal.js
-import React from 'react';
-import './Popup.css';
+import React from "react";
+import "./Popup.css"; // Ensure CSS for styling the popup
 
-const PopupModal = ({ message, onClose }) => {
+const Popup = ({ isOpen, onClose, content }) => {
+  if (!isOpen) return null;
+
   return (
     <div className="popup-overlay" onClick={onClose}>
-      <div className="popup-box" onClick={(e) => e.stopPropagation()}>
-        <p>{message}</p>
-        <button className="close-button" onClick={onClose}>Close</button>
+      <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+        <button className="popup-close-btn" onClick={onClose}>X</button>
+        <div className="popup-message">
+          <h2>✨ Stay Tuned! ✨</h2>
+          <p>{content}</p>
+        </div>
       </div>
     </div>
   );
 };
 
-export default PopupModal;
+export default Popup;

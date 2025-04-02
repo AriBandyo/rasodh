@@ -74,21 +74,29 @@ const Menu = () => {
     <div className="menu-section">
       <h2 className="menu-heading">Our Collection of Foods</h2>
 
-      <div className="menu-tabs">
-        <button
-          onClick={() => setActiveTab("appetizers")}
-          className={activeTab === "appetizers" ? "active" : ""}
-        >
-          Appetizers
-        </button>
-        <button
-          onClick={() => setActiveTab("mains")}
-          className={activeTab === "mains" ? "active" : ""}
-        >
-          Main Course
-        </button>
+      {/* Toggle Tabs */}
+      <div className="custom-toggle">
+        <div className="custom-toggle-background">
+          <div
+            className="custom-toggle-slider"
+            style={{ left: activeTab === "appetizers" ? "0%" : "50%" }}
+          />
+          <button
+            className={`custom-toggle-btn ${activeTab === "appetizers" ? "active" : ""}`}
+            onClick={() => setActiveTab("appetizers")}
+          >
+            Appetizers
+          </button>
+          <button
+            className={`custom-toggle-btn ${activeTab === "mains" ? "active" : ""}`}
+            onClick={() => setActiveTab("mains")}
+          >
+            Mains
+          </button>
+        </div>
       </div>
 
+      {/* Menu Grid */}
       <div className="menu-grid">
         {itemsToDisplay.map((item, index) => (
           <div className="menu-card" key={index}>
@@ -100,9 +108,12 @@ const Menu = () => {
         ))}
       </div>
 
-      <Link to="/preorder">
-        <button className="preorder-button">PRE-ORDER NOW</button>
-      </Link>
+      {/* Preorder Redirect Button */}
+      <div style={{ marginTop: "40px", display: "flex", justifyContent: "center" }}>
+        <Link to="/preorder">
+          <button className="preorder-button">Preorder Now</button>
+        </Link>
+      </div>
     </div>
   );
 };

@@ -1,27 +1,54 @@
-.preorder-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #fafafa;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    padding: 20px;
+.preorder-page {
+  min-height: 100vh;
+  background-image: url("./solid_c79f5f_background.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Optional soft overlay for readability */
+.preorder-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.preorder-page-content {
+  flex: 1;
+  text-align: center;
+  padding: 100px 20px 60px;
+  z-index: 1;
+  position: relative;
+}
+
+.preorder-page-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2f313c;
+  margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.preorder-page-content p {
+  font-size: 20px;
+  color: #2f313c;
+}
+
+.phone {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .preorder-page-content h2 {
+    font-size: 28px;
   }
-  
-  .preorder-title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1rem;
+
+  .preorder-page-content p {
+    font-size: 16px;
+    padding: 0 10px;
   }
-  
-  .preorder-message {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .preorder-message strong {
-    color: #e60000;
-  }
-  
+}
