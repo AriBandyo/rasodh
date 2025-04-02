@@ -4,7 +4,7 @@ import "./menu.css";
 
 import Dabeli from "./assests/dabeli.png";
 import DahiWada from "./assests/dahi_vada.png";
-import RagdaPatis from "./assests/dahi_vada.png";
+import RagdaPatis from "./assests/ragda_pat.png";
 import PavBhaji from "./assests/pav_bhaji.png";
 import PaniPuri from "./assests/pani_puri.png";
 import MasalaPuri from "./assests/masalapuri.png";

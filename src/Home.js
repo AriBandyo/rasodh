@@ -11,7 +11,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero-section" id="home">
         <h1>Welcome to Rasodh!</h1>
-        <p>Delicious food made with love. Explore our delicious and mouth watering menu!</p>
+        <p>"Delicious food made with love. Explore our delicious and mouth watering menu!" instead of this use this "From our kitchen to your table, indulge in fresh, flavorful meals made with love and the finest ingredients!</p>
         <div className="hero-buttons">
           <a href="#about" className="hero-btn">About Us</a>
           <a href="#menu" className="hero-btn">View Menu</a>

@@ -26,16 +26,16 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Follow Us</h4>
           <div className="social-icons">
-            <a href="https://twitter.com/rasodh" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <a href="" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
               <i className="fab fa-x-twitter"></i>
             </a>
-            <a href="https://facebook.com/rasodh" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="https://instagram.com/rasodh" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/rasodh.yyc/h" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="https://linkedin.com/company/rasodh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <i className="fab fa-linkedin-in"></i>
             </a>
           </div>
