@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Import Link from React Router
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./menu.css";
 
 import Dabeli from "./assests/dabeli.png";
@@ -12,7 +12,9 @@ import Kathiyawadi from "./assests/kathidya.png";
 import SevUsal from "./assests/sev_usal.png";
 
 const Menu = () => {
-  const menuItems = [
+  const [activeTab, setActiveTab] = useState("appetizers");
+
+  const appetizers = [
     {
       name: "Dahi Wada",
       description: "Soft lentil dumplings in spiced yogurt with chutneys.",
@@ -37,6 +39,9 @@ const Menu = () => {
       price: "$10",
       image: Dabeli,
     },
+  ];
+
+  const mains = [
     {
       name: "Pav Bhaji",
       description: "Rich mashed veggie curry served with butter-toasted pav.",
@@ -63,11 +68,29 @@ const Menu = () => {
     },
   ];
 
+  const itemsToDisplay = activeTab === "appetizers" ? appetizers : mains;
+
   return (
     <div className="menu-section">
       <h2 className="menu-heading">Our Collection of Foods</h2>
+
+      <div className="menu-tabs">
+        <button
+          onClick={() => setActiveTab("appetizers")}
+          className={activeTab === "appetizers" ? "active" : ""}
+        >
+          Appetizers
+        </button>
+        <button
+          onClick={() => setActiveTab("mains")}
+          className={activeTab === "mains" ? "active" : ""}
+        >
+          Main Course
+        </button>
+      </div>
+
       <div className="menu-grid">
-        {menuItems.map((item, index) => (
+        {itemsToDisplay.map((item, index) => (
           <div className="menu-card" key={index}>
             <img src={item.image} alt={item.name} />
             <h4>{item.name}</h4>
@@ -77,7 +100,6 @@ const Menu = () => {
         ))}
       </div>
 
-      {/* Use Link to route to /preorder */}
       <Link to="/preorder">
         <button className="preorder-button">PRE-ORDER NOW</button>
       </Link>

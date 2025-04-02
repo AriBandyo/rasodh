@@ -1,0 +1,166 @@
+/* ========== GLOBAL RESET ========== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  color: #2f313c;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========== HERO SECTION ========== */
+.hero-section {
+  padding: 100px 20px 60px;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffe082, #fff8e1);
+  border-bottom: 1px solid #eee;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero-section h1 {
+  font-size: 52px;
+  font-weight: 800;
+  color: #1c1c2e;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-section p {
+  font-size: 20px;
+  color: #333;
+  max-width: 760px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.hero-btn {
+  background-color: #1c1c2e;
+  color: #fdd835;
+  text-decoration: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-btn:hover {
+  background-color: #343650;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding: 80px 15px 40px;
+  }
+
+  .hero-section h1 {
+    font-size: 38px;
+  }
+
+  .hero-section p {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-btn {
+    width: 90%;
+    max-width: 280px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== ABOUT SECTION ========== */
+.about-section {
+  background: linear-gradient(to bottom right, #3b3d4f, #5e6180);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fdd835;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+/* ========== MENU SECTION ========== */
+.menu-section {
+  background-color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* ========== CONTACT SECTION ========== */
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #1c1c2e;
+  color: #fdd835;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #fdd835;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+/* Maintain other styles... */
